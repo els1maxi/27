@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Library</title>
+    <script src="./script.js"></script>
+    <style>
+        .container {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .weather-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .border-right {
+            border-right: 1px solid black;
+        }
+        .weather-list {
+            display: flex;
+        }
+        .weather-item span {
+            display: block;
+        }
+        .button-group {
+            margin-top: 10px;
+        }
+        .button-group button {
+            margin-right: 10px;
+        }
+        .library-section {
+            margin-top: 20px;
+        }
+        .library-form {
+            margin-bottom: 20px;
+        }
+        .library-form input {
+            margin-right: 10px;
+        }
+        .book-list {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <ul id="weatherList" class="weather-list"></ul>
+        <div class="button-group">
+            <button id="getMin">Get Minimum Temperature</button>
+            <button id="getMax">Get Maximum Temperature</button>
+            <button id="getAvg">Get Average Temperature</button> 
+        </div>
+
+    
+        <div class="library-section">
+            <h1>Library</h1>
+            <div class="library-form">
+                <input type="text" id="bookTitle" placeholder="Book Title">
+                <input type="text" id="bookAuthor" placeholder="Book Author">
+                <input type="number" id="bookYear" placeholder="Publication Year">
+                <button id="addBook">Add Book</button>
+            </div>
+            <div class="button-group">
+                <button id="listAvailableBooks">List Available Books</button>
+                <button id="findBooksByAuthor">Find Books by Author</button>
+            </div>
+            <ul id="bookList" class="book-list"></ul>
+        </div>
+    </div>
+</body>
+</html>
